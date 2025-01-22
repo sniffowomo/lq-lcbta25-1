@@ -1,2 +1,2 @@
-# lq-lcbta25-1
-YTlearnCSharpFreeTutorialCourseBeginnerToAdvannced2025-Studpanty
+<img src="./wz/g.png" width="300%">
+
