@@ -1,6 +1,6 @@
 // 1st Execercise 
 
-using Microsoft.VisualBasic;
+using System;
 
 namespace u12.src
 {
@@ -40,7 +40,7 @@ namespace u12.src
             var userChoice = "candy";
             System.Console.WriteLine();
             bool isUserInputAbc = userChoice == "abc";
-            System.Console.WriteLine(isUserInputAbc);
+
         }
 
     }
