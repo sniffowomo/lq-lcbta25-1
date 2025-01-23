@@ -3,6 +3,7 @@ namespace u12.src
 {
     public class Work1
     {
+        // Function 1
         public static void Func1()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
