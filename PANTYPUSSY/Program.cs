@@ -1,5 +1,18 @@
-﻿
-Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine("SnifffHerAssAndPussyNowsss");
-Console.WriteLine("SnifffHerAssAndPussyNowsss");
-Console.ResetColor();
+﻿using u12.exc;
+using u12.src;
+using u12.exp;
+
+namespace u12
+{
+
+    class Program
+    {
+        // Main Entry point for the application
+        static void Main()
+        {
+            Console.Clear();
+            Exp1.FirstLetterColored();
+        }
+    }
+}
+
