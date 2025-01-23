@@ -1,6 +1,7 @@
 
 1. [U12](#u12)
 2. [Diraz](#diraz)
+3. [External Packages](#external-packages)
 
 
 # U12
@@ -18,3 +19,9 @@
 [`exp`](./exp/) | Random Exerpimentation
 
 
+# External Packages 
+
+1. Youc can find external packages from c# 
+
+https://www.nuget.org/
+- Looks like an unofificial 
