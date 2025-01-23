@@ -1,5 +1,4 @@
 // 1st Execercise 
-using System;
 
 namespace u12.src
 {
