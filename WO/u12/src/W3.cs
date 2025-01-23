@@ -35,10 +35,10 @@ namespace u12.src
             Console.WriteLine("Enter a string: ");
             string? input = Console.ReadLine()?.Trim();
             var resultIsLong = IsLong(input);
-            Console.WriteLine($"The string {input.Pastel(Color.YellowGreen)} is {(resultIsLong ? "long" : "short")}");
+            Console.WriteLine($"The string {input.Pastel(Color.YellowGreen)} is {resultIsLong.ToString().Pastel(Color.Bisque)}");
 
+            // Note this is advanced using ternary operator
             Console.WriteLine($"The string {input.Pastel(Color.YellowGreen)} is {(IsLong(input) ? "long" : "short")}");
-
         }
     }
 }
