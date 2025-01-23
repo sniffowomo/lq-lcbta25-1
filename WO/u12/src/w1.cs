@@ -29,6 +29,7 @@ namespace u12.src
         // Printing Words in different colors
         public static void Func3()
         {
+            Console.Clear();
             // Defining sentence to breakdown 
             string colorWords = "Drink Woman Juices";
 
@@ -56,7 +57,7 @@ namespace u12.src
                 Console.ResetColor();
             }
             Console.WriteLine();
-            Console.ReadKey();
+
         }
     }
 }
