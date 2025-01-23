@@ -12,7 +12,15 @@ namespace u12.exc
         public static void Func1()
         {
             Utils.Label1("Excercise 1");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Hello Excercise 1");
+            Console.ResetColor();
+
+            Console.WriteLine("[S]ee all TODOs");
+            Console.WriteLine("[A]dd TODO");
+            Console.WriteLine("[R]emove TODO");
+            Console.WriteLine("[E]xit");
         }
 
     }

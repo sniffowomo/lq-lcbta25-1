@@ -9,6 +9,7 @@ namespace u12
         // Main Entry point for the application
         static void Main()
         {
+            Console.Clear();
             Exc1.Func1();
         }
     }
