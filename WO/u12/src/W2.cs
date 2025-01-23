@@ -15,7 +15,7 @@ A = Add TODO
 R = Remove TODO
 E = Exit
 ");
-            var userChoice = Console.ReadLine();
+            var userChoice = Console.ReadLine()?.ToUpper();
 
             if (userChoice == "S")
             {
