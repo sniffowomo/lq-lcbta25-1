@@ -13,13 +13,13 @@ namespace u12.exp
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("[?] Enter Word whose caps you want colored : ");
             Console.ResetColor();
-            string word = Console.ReadLine();
+            string? word = Console.ReadLine();
 
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(word[0]);
+            Console.Write(word?[0]);
             Console.ResetColor();
 
-            Console.WriteLine(word[1..]);
+            Console.WriteLine(word?[1..]);
             Helperz.EndMessage();
 
         }
@@ -31,10 +31,10 @@ namespace u12.exp
             Console.Write("[?] Enter Word whose caps you want colored : ");
             Console.ResetColor();
             // Defining sentence to breakdown 
-            string colorWords = Console.ReadLine();
+            string? colorWords = Console.ReadLine();
 
             // Defining an array with split words
-            string[] words = colorWords.Split(' ');
+            string[]? words = colorWords.Split(' ');
 
             // Defining Colors 
             ConsoleColor[] wordColors = {
@@ -61,6 +61,7 @@ namespace u12.exp
             Helperz.EndMessage();
         }
 
+        // This can be further optimized with and if-else ans switch statements
         public static void WhileLoop1()
         {
             Utils.Label1("While Loop Testing");
