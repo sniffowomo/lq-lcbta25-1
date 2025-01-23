@@ -7,16 +7,19 @@ namespace u12.exp
         //First Letter of word is colored
         public static void FirstLetterColored()
         {
-            string name = "Pusy";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("[?] Enter Word whose caps you want colored");
+            Console.ResetColor();
+            string word = Console.ReadLine();
 
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(name[0]);
+            Console.Write(word[0]);
             Console.ResetColor();
 
-            Console.Write(name[1..]);
+            Console.Write(word[1..]);
         }
 
-        public static void Func3()
+        public static void SentenceColored()
         {
             Console.Clear();
             // Defining sentence to breakdown 
