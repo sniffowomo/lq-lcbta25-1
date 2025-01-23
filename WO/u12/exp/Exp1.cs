@@ -34,7 +34,7 @@ namespace u12.exp
             string? colorWords = Console.ReadLine();
 
             // Defining an array with split words
-            string[]? words = colorWords.Split(' ');
+            string[] words = colorWords.Split(' ');
 
             // Defining Colors 
             ConsoleColor[] wordColors = {
