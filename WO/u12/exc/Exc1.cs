@@ -9,7 +9,7 @@ namespace u12.exc
 
     public class Exc1
     {
-        public static void Func1()
+        public static void Exz1()
         {
             Utils.Label1("Excercise 1");
 
@@ -22,8 +22,9 @@ namespace u12.exc
             Console.WriteLine("[R]emove TODO");
             Console.WriteLine("[E]xit");
 
+            // Reading user input
             string userChoice = Console.ReadLine();
-            System.Console.WriteLine("Entered :" + userChoice);
+            Console.WriteLine("Entered :" + userChoice);
 
         }
 
