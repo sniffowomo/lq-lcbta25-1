@@ -67,7 +67,7 @@ namespace u12.exp
         public static void EndMessage()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("[+] Executed Successfully");
+            Console.WriteLine("[+] Executed Successfully :} ");
             Console.ResetColor();
         }
     }
