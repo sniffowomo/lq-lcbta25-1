@@ -65,17 +65,16 @@ namespace u12.exp
         {
             Utils.Label1("While Loop Testing");
 
+            string? keyChoice;
 
             do
             {
                 Console.WriteLine("[?] Enter Text to evaluate (q to exit): ");
-                var keyChoice = Console.ReadLine();
-
-
+                keyChoice = Console.ReadLine()?.Trim();
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine($"[+] U enetered (Etner q to exist) - {keyChoice}");
                 Console.ResetColor();
-            } while
+            } while (keyChoice?.ToLower() != "q");
 
         }
 
