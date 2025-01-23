@@ -33,7 +33,7 @@ namespace u12.src
         {
             Utils.Label2("IsLong Method");
             Console.WriteLine("Enter a string: ");
-            string? input = Console.ReadLine()?.Trim();
+            string input = Console.ReadLine()?.Trim() ?? string.Empty;
             var resultIsLong = IsLong(input);
             Console.WriteLine($"The string {input.Pastel(Color.YellowGreen)} is {resultIsLong.ToString().Pastel(Color.Bisque)}");
 
