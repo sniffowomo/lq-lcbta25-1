@@ -57,7 +57,6 @@ namespace u12.src
                 Console.ResetColor();
             }
             Console.WriteLine();
-
         }
     }
 }
