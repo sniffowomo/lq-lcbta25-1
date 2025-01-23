@@ -27,8 +27,21 @@ namespace u12.src
         // Printing Words in different colors
         public static void Func3()
         {
+            // Defining sentence to breakdown 
             string colorWords = "Drink Woman Juices";
+
+            // Defining an array with split words
             string[] words = colorWords.Split(' ');
+
+            // Defining Colors 
+            wordColor[] wordColors =
+
+
+
+            foreach (string word in words)
+            {
+
+            }
         }
     }
 }
