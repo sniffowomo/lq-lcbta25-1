@@ -15,7 +15,7 @@ export NC='\033[0m' # No Color
 # Commands
 b1() {
     echo -e "${CYAN} =============== "
-    echo -e "Setting up a new dotnet project"
+    echo -e "Setting up a new dotnet project with .net 8.0"
     echo -e "===============${NC}"
 }
 
