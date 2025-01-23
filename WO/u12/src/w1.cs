@@ -12,15 +12,23 @@ namespace u12.src
             Console.ResetColor();
         }
 
+        // Printing the first letter in a different color
         public static void Func2()
         {
             string name = "Pusy";
 
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write(name[0]);
-
             Console.ResetColor();
 
+            Console.Write(name[1..]);
+        }
+
+        // Printing Words in different colors
+        public static void Func3()
+        {
+            string colorWords = "Drink Woman Juices";
+            string[] words = colorWords.Split(' ');
         }
     }
 }
