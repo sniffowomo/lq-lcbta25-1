@@ -1,5 +1,6 @@
 ﻿using u12.exc;
 using u12.src;
+using u12.exp;
 
 namespace u12
 {
@@ -10,7 +11,7 @@ namespace u12
         static void Main()
         {
             Console.Clear();
-            Exc1.Func1();
+            Exp1.FirstLetterColored();
         }
     }
 }

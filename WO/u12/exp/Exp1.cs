@@ -1,5 +1,7 @@
 // Experiments section 
 
+using u12.src;
+
 namespace u12.exp
 {
     public class Exp1
@@ -7,8 +9,9 @@ namespace u12.exp
         //First Letter of word is colored
         public static void FirstLetterColored()
         {
+            Utils.Label1("First Letter Colored Program");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("[?] Enter Word whose caps you want colored");
+            Console.Write("[?] Enter Word whose caps you want colored : ");
             Console.ResetColor();
             string word = Console.ReadLine();
 
