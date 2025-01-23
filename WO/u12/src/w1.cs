@@ -34,21 +34,21 @@ namespace u12.src
             string[] words = colorWords.Split(' ');
 
             // Defining Colors 
-            wordColor[] wordColors = {
+            ConsoleColor[] wordColors = {
                 ConsoleColor.Red,
-            ConsoleColor.Green,
-            ConsoleColor.Yellow,
-            ConsoleColor.Blue,
-            ConsoleColor.Magenta,
-            ConsoleColor.Cyan,
-            ConsoleColor.White
+                ConsoleColor.Green,
+                ConsoleColor.Yellow,
+                ConsoleColor.Blue,
+                ConsoleColor.Magenta,
+                ConsoleColor.Cyan,
+                ConsoleColor.White
             };
-
-
 
             foreach (string word in words)
             {
-
+                Console.ForegroundColor = wordColors[new Random().Next(0, wordColors.Length)];
+                Console.Write(word + " ");
+                Console.ResetColor();
             }
         }
     }
