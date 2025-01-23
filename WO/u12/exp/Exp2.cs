@@ -22,7 +22,10 @@ namespace u12.exp
             Utils.Label1("Testing out Paste colors on inputs");
             Console.WriteLine("Enter ur Name: ");
             string? colorName = Console.ReadLine()?.Trim();
-            Console.WriteLine("Name is " + colorName.Pastel(Color.YellowGreen));
+            Console.WriteLine(
+                "Name is " +
+                colorName.Pastel(Color.YellowGreen)
+                );
             Console.WriteLine($"Name is : {colorName.Pastel(Color.Bisque)} ");
         }
     }
