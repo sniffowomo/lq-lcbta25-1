@@ -8,9 +8,12 @@ namespace u12.src
         {
             // Part of this work is continued from exc1
             Utils.Label2("Nonvoid Methods");
+            var Result = Sum(10, 20);
+        }
 
-            Console.WriteLine("");
-
+        public static int Sum(int a, int b)
+        {
+            return a + b;
         }
     }
 }

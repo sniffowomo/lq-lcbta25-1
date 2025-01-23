@@ -11,14 +11,12 @@ namespace u12
         static void Main()
         {
             Console.Clear();
-            W3Func1();
+            Work3.Func1();
+
         }
 
         // W3.cs - Methods here 2 integers returning a sum
-        public static int W3Func1(int a, int b)
-        {
-            return a + b;
-        }
+
     }
 }
 
