@@ -1,2 +1,2 @@
-<img src="./wz/g.png" width="300%">
+<img src="./wz/g.pg" width="300%">
 
