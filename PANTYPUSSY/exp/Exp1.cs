@@ -13,13 +13,13 @@ namespace u12.exp
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("[?] Enter Word whose caps you want colored : ");
             Console.ResetColor();
-            string word = Console.ReadLine();
+            string? word = Console.ReadLine();
 
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(word[0]);
+            Console.Write(word?[0]);
             Console.ResetColor();
 
-            Console.WriteLine(word[1..]);
+            Console.WriteLine(word?[1..]);
             Helperz.EndMessage();
 
         }
@@ -31,7 +31,7 @@ namespace u12.exp
             Console.Write("[?] Enter Word whose caps you want colored : ");
             Console.ResetColor();
             // Defining sentence to breakdown 
-            string colorWords = Console.ReadLine();
+            string? colorWords = Console.ReadLine();
 
             // Defining an array with split words
             string[] words = colorWords.Split(' ');
@@ -60,14 +60,35 @@ namespace u12.exp
 
             Helperz.EndMessage();
         }
+
+        // This can be further optimized with and if-else ans switch statements
+        public static void WhileLoop1()
+        {
+            Utils.Label1("While Loop Testing");
+
+            string? keyChoice;
+
+            do
+            {
+                Console.WriteLine("[?] Enter Text to evaluate (q to exit): ");
+                keyChoice = Console.ReadLine()?.Trim();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"[+] U enetered (Etner q to exist) - {keyChoice}");
+                Console.ResetColor();
+            } while (keyChoice?.ToLower() != "q");
+        }
+
+        // Write new methods here
     }
 
+
+    // -------- Helperz Functions Class-------- 
     public class Helperz
     {
         public static void EndMessage()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("[+] Executed Successfully :} ");
+            Console.WriteLine("[+] Executed Successfully");
             Console.ResetColor();
         }
     }
