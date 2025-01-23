@@ -16,6 +16,9 @@ namespace u12.src
             Console.WriteLine($"Press {"ENTER".Pastel(Color.FromArgb(165, 229, 250))} to continue");
         }
 
+
+        // Adding integer methodws which is no void 
+
         public static int Sum(int a, int b)
         {
             return a + b;

@@ -11,12 +11,8 @@ namespace u12
         static void Main()
         {
             Console.Clear();
-            Exp2.ColorTextWithInput();
 
         }
-
-
-
     }
 }
 
