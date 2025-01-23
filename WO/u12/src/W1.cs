@@ -63,5 +63,24 @@ namespace u12.src
             }
 
         }
+
+        // Scopes of variables
+        public static void Func5()
+        {
+            Utils.Label1("Scopes");
+            Console.WriteLine("Enter Text to evaluate : ");
+            var userChoice = Console.ReadLine();
+
+            if (userChoice.Length == 0)
+            {
+                System.Console.WriteLine("Empty Fukr" + userChoice);
+            }
+            else
+            {
+                System.Console.WriteLine("Not Empty Fukr" + userChoice);
+            }
+            Console.WriteLine("Ur Choice = " + userChoice);
+
+        }
     }
 }
