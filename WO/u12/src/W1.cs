@@ -29,9 +29,18 @@ namespace u12.src
         //Var and Implicit and explicit variables
         public static void Func3()
         {
+
+            // Var realated
             var name = "Booty"; name = ""; name = "";
+            string name2 = "Booty";
+            string name3 = "Booty";
 
+            // Equalityies 
 
+            var userChoice = "candy";
+            System.Console.WriteLine();
+            bool isUserInputAbc = userChoice == "abc";
+            System.Console.WriteLine(isUserInputAbc);
         }
 
     }
