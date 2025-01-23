@@ -23,16 +23,22 @@ namespace u12.src
             return a + b;
         }
 
+        // Checking if a string is considered to be long
         public static bool IsLong(string input)
         {
-            if (input.Length > 10)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return input.Length > 10;
+        }
+
+        public static void ExecuteIsLong()
+        {
+            Utils.Label2("IsLong Method");
+            Console.WriteLine("Enter a string: ");
+            string? input = Console.ReadLine()?.Trim();
+            var resultIsLong = IsLong(input);
+            Console.WriteLine($"The string {input.Pastel(Color.YellowGreen)} is {(resultIsLong ? "long" : "short")}");
+
+            Console.WriteLine($"The string {input.Pastel(Color.YellowGreen)} is {(IsLong(input) ? "long" : "short")}");
+
         }
     }
 }
