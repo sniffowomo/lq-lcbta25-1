@@ -43,5 +43,25 @@ namespace u12.src
 
         }
 
+        // Conditional
+        public static void Func4()
+        {
+            Utils.Label1("Conditionals");
+            Console.WriteLine("Enter Text to evaluate : ");
+            var userChoice = Console.ReadLine();
+            if (userChoice == "a")
+            {
+                Console.WriteLine("A");
+            }
+            else if (userChoice == "b")
+            {
+                Console.WriteLine("B");
+            }
+            else
+            {
+                Console.WriteLine("C");
+            }
+
+        }
     }
 }
