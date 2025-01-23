@@ -65,6 +65,8 @@ namespace u12.exp
         {
             Utils.Label1("While Loop Testing");
 
+
+            Console.WriteLine("[?] Enter Text to evaluate (q to exit): ");
             var keyChoice = Console.ReadLine();
             while (keyChoice != "q")
             {
