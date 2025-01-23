@@ -19,14 +19,19 @@ namespace u12.exp
             Console.Write(word[0]);
             Console.ResetColor();
 
-            Console.Write(word[1..]);
+            Console.WriteLine(word[1..]);
+            Helperz.EndMessage();
+
         }
 
         public static void SentenceColored()
         {
-            Console.Clear();
+            Utils.Label1("Coloring Sentence");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("[?] Enter Word whose caps you want colored : ");
+            Console.ResetColor();
             // Defining sentence to breakdown 
-            string colorWords = "Drink Woman Juices";
+            string colorWords = Console.ReadLine();
 
             // Defining an array with split words
             string[] words = colorWords.Split(' ');
@@ -52,8 +57,18 @@ namespace u12.exp
                 Console.ResetColor();
             }
             Console.WriteLine();
+
+            Helperz.EndMessage();
         }
+    }
 
-
+    public class Helperz
+    {
+        public static void EndMessage()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("[+] Executed Successfully");
+            Console.ResetColor();
+        }
     }
 }

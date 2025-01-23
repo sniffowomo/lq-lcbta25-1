@@ -11,6 +11,7 @@ namespace u12
         static void Main()
         {
             Console.Clear();
+            Exp1.FirstLetterColored();
             Exp1.SentenceColored();
         }
     }

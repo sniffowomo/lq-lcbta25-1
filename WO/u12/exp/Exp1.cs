@@ -19,7 +19,9 @@ namespace u12.exp
             Console.Write(word[0]);
             Console.ResetColor();
 
-            Console.Write(word[1..]);
+            Console.WriteLine(word[1..]);
+            Helperz.EndMessage();
+
         }
 
         public static void SentenceColored()
@@ -55,8 +57,18 @@ namespace u12.exp
                 Console.ResetColor();
             }
             Console.WriteLine();
+
+            Helperz.EndMessage();
         }
+    }
 
-
+    public class Helperz
+    {
+        public static void EndMessage()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("[+] Executed Successfully");
+            Console.ResetColor();
+        }
     }
 }

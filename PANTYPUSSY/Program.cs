@@ -12,6 +12,7 @@ namespace u12
         {
             Console.Clear();
             Exp1.FirstLetterColored();
+            Exp1.SentenceColored();
         }
     }
 }
