@@ -22,6 +22,9 @@ namespace u12.exc
             Console.WriteLine("[R]emove TODO");
             Console.WriteLine("[E]xit");
 
+            string userChoice = Console.ReadLine();
+            System.Console.WriteLine("Entered :" + userChoice);
+
         }
 
     }
