@@ -46,7 +46,7 @@ namespace u12.src
 
             foreach (string word in words)
             {
-                Console.ForegroundColor = wordColors[new Random().Next(0, wordColors.Length)];
+                Console.ForegroundColor = wordColors[random().Next(0, wordColors.Length)];
                 Console.Write(word + " ");
                 Console.ResetColor();
             }
