@@ -29,8 +29,9 @@ namespace u12.src
         //Var and Implicit and explicit variables
         public static void Func3()
         {
-            string name = "Booty";
-            int number = 1;
+            var name = "Booty"; name = ""; name = "";
+
+
         }
 
     }
