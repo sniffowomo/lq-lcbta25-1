@@ -23,6 +23,7 @@ namespace u12.exp
             Console.WriteLine("Enter ur Name: ");
             string? colorName = Console.ReadLine()?.Trim();
             Console.WriteLine("Name is " + colorName.Pastel(Color.YellowGreen));
+            Console.WriteLine($"Name is : {colorName.Pastel(Color.Bisque)} ");
         }
     }
 
