@@ -130,7 +130,7 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            ./artifacts/PANTYPUSSY-windows-latest/smellypanty-v${{ github.run_number }}-windows.zip
-            ./artifacts/PANTYPUSSY-ubuntu-latest/smellypanty-v${{ github.run_number }}-linux.tar.gz
+            ./artifacts/PANTYPUSSY-windows-latest/smellypanty-windows.zip
+            ./artifacts/PANTYPUSSY-ubuntu-latest/smellypanty-linux.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
