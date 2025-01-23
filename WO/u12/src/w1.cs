@@ -1,12 +1,14 @@
 // 1st Execercise 
 namespace u12.src
 {
-
-    class Work1
+    public class Work1
     {
-        static void Main()
+        public static void Func1()
         {
-            Console.WriteLine("Hello World!");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Hello World! From .. Press any button to exit");
+            Console.ReadKey();
+            Console.ResetColor();
         }
     }
 }

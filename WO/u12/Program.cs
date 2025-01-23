@@ -8,7 +8,7 @@ namespace u12
         // Main Entry point for the application
         static void Main()
         {
-            Work1.Main();
+            Work1.Func1();
         }
     }
 }
