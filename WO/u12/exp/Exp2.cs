@@ -16,6 +16,14 @@ namespace u12.exp
             Console.WriteLine("This is a test of color text".Pastel(Color.WhiteSmoke));
             Console.WriteLine("This is a test of color text".Pastel(Color.FromArgb(165, 229, 250)));
         }
+
+        public static void ColorTextWithInput()
+        {
+            Utils.Label1("Testing out Paste colors on inputs");
+            Console.WriteLine("Enter ur Name: ");
+            string? colorName = Console.ReadLine()?.Trim();
+            Console.WriteLine("Name is " + colorName.Pastel(Color.YellowGreen));
+        }
     }
 
 }
