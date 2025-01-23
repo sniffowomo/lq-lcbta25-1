@@ -26,5 +26,12 @@ namespace u12.src
             Console.ResetColor();
         }
 
+        //Var and Implicit and explicit variables
+        public static void Func3()
+        {
+            string name = "Booty";
+            int number = 1;
+        }
+
     }
 }
