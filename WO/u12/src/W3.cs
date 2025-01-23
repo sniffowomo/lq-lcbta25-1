@@ -2,6 +2,7 @@
 
 using Pastel;
 using System.Drawing;
+using System.Security;
 
 namespace u12.src
 {
@@ -16,12 +17,22 @@ namespace u12.src
             Console.WriteLine($"Press {"ENTER".Pastel(Color.FromArgb(165, 229, 250))} to continue");
         }
 
-
         // Adding integer methodws which is no void 
-
         public static int Sum(int a, int b)
         {
             return a + b;
+        }
+
+        public static bool IsLong(string input)
+        {
+            if (input.Length > 10)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
