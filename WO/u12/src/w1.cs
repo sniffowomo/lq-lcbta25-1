@@ -34,7 +34,15 @@ namespace u12.src
             string[] words = colorWords.Split(' ');
 
             // Defining Colors 
-            wordColor[] wordColors =
+            wordColor[] wordColors = {
+                ConsoleColor.Red,
+            ConsoleColor.Green,
+            ConsoleColor.Yellow,
+            ConsoleColor.Blue,
+            ConsoleColor.Magenta,
+            ConsoleColor.Cyan,
+            ConsoleColor.White
+            };
 
 
 
