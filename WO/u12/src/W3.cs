@@ -12,7 +12,7 @@ namespace u12.src
             // Part of this work is continued from exc1
             Utils.Label2("Nonvoid Methods");
             var Result = Sum(10, 20);
-            Console.WriteLine($"Sum of {10.Pas} and {20} is {Result}");
+            Console.WriteLine($"Sum of {10.ToString().Pastel(Color.DarkCyan)} and {20.ToString().Pastel(Color.WhiteSmoke)} is {Result}");
             Console.WriteLine($"Press {"ENTER".Pastel(Color.FromArgb(165, 229, 250))} to continue");
         }
 
