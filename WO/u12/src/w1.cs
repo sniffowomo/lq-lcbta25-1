@@ -1,4 +1,6 @@
 // 1st Execercise 
+using System;
+
 namespace u12.src
 {
     public class Work1
@@ -44,12 +46,17 @@ namespace u12.src
                 ConsoleColor.White
             };
 
+            // Creating instance for random
+            Random random = new();
+
             foreach (string word in words)
             {
-                Console.ForegroundColor = wordColors[random().Next(0, wordColors.Length)];
+                Console.ForegroundColor = wordColors[random.Next(0, wordColors.Length)];
                 Console.Write(word + " ");
                 Console.ResetColor();
             }
+            Console.WriteLine();
+            Console.ReadKey();
         }
     }
 }
