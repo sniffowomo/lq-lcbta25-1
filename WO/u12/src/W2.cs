@@ -12,27 +12,19 @@ namespace u12.src
 
             if (userChoice == "S")
             {
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Seleted Option: See TODOs");
-                Console.ResetColor();
+                Func1_Sub1("See all TODOs");
             }
             else if (userChoice == "A")
             {
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Seleted Option: Add TODO");
-                Console.ResetColor();
+                Func1_Sub1("Add TODO");
             }
             else if (userChoice == "R")
             {
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Seleted Option: Remove TODO");
-                Console.ResetColor();
+                Func1_Sub1("Remove TODO");
             }
             else if (userChoice == "E")
             {
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Seleted Option: Exit");
-                Console.ResetColor();
+                Func1_Sub1("Exit");
             }
             else
             {
@@ -40,6 +32,14 @@ namespace u12.src
                 Console.WriteLine("Invalid Choice");
                 Console.ResetColor();
             }
+        }
+
+        // This method is for Func1
+        public static void Func1_Sub1(string selectedOption)
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Seleted Option: " + selectedOption);
+            Console.ResetColor();
         }
 
     }
