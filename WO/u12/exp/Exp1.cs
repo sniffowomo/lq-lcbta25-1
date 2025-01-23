@@ -76,7 +76,6 @@ namespace u12.exp
                 Console.WriteLine($"[+] U enetered (Etner q to exist) - {keyChoice}");
                 Console.ResetColor();
             } while (keyChoice?.ToLower() != "q");
-
         }
 
         // Write new methods here
