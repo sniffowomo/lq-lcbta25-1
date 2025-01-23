@@ -11,5 +11,16 @@ namespace u12.src
             Console.ReadKey();
             Console.ResetColor();
         }
+
+        public static void Func2()
+        {
+            string name = "Pusy";
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(name[0]);
+
+            Console.ResetColor();
+
+        }
     }
 }
