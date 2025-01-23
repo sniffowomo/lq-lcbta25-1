@@ -8,6 +8,13 @@ namespace u12.src
             // Part of this work is continued from exc1
             Utils.Label1("Method");
 
+            Console.WriteLine(@"
+Enter Text to evaluate : 
+S = See all TODOs
+A = Add TODO
+R = Remove TODO
+E = Exit
+");
             var userChoice = Console.ReadLine();
 
             if (userChoice == "S")
