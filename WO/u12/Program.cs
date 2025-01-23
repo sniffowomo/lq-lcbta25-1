@@ -1,4 +1,5 @@
-﻿using u12.src;
+﻿using u12.exc;
+using u12.src;
 
 namespace u12
 {
@@ -8,7 +9,7 @@ namespace u12
         // Main Entry point for the application
         static void Main()
         {
-            Work1.Func3();
+            Exc1.Func1();
         }
     }
 }
