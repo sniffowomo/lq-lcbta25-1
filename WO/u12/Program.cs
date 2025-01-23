@@ -11,11 +11,11 @@ namespace u12
         static void Main()
         {
             Console.Clear();
-            Work3.Func1();
+            Exp2.ColorText1();
 
         }
 
-        // W3.cs - Methods here 2 integers returning a sum
+
 
     }
 }
