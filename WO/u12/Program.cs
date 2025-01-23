@@ -11,7 +11,7 @@ namespace u12
         static void Main()
         {
             Console.Clear();
-            Exc1.Exz1();
+            Work1.Func1();
         }
     }
 }
