@@ -73,14 +73,17 @@ namespace u12.src
 
             if (userChoice.Length == 0)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 System.Console.WriteLine("Empty Fukr" + userChoice);
+                Console.ResetColor();
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 System.Console.WriteLine("Not Empty Fukr" + userChoice);
+                Console.ResetColor();
             }
             Console.WriteLine("Ur Choice = " + userChoice);
-
         }
     }
 }
