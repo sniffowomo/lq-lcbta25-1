@@ -60,8 +60,22 @@ namespace u12.exp
 
             Helperz.EndMessage();
         }
+
+        public static void WhileLoop1()
+        {
+            var keyChoice = Console.ReadLine();
+            while (keyChoice != "q")
+            {
+                Console.WriteLine("Hello World!");
+                keyChoice = Console.ReadLine();
+            }
+        }
+
+        // Write new methods here
     }
 
+
+    // -------- Helperz Functions Class-------- 
     public class Helperz
     {
         public static void EndMessage()
