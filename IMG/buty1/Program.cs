@@ -1,5 +1,6 @@
 ﻿// File for curling 
 
+using buty1.src;
 using Pastel;
 using System.Drawing;
 
@@ -9,12 +10,7 @@ namespace buty1
     {
         static void Main(string[] args)
         {
-            var colors = new[] { Color.Red, Color.AliceBlue, Color.BlanchedAlmond, Color.BlueViolet };
-            foreach (var color in colors)
-            {
-                Console.WriteLine("Hello World!".Pastel(color));
-            }
-
+            Experiment1.Exp1();
         }
     }
 }
