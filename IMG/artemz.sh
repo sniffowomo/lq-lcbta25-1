@@ -49,6 +49,14 @@ c4() {
     $CO
 }
 
+# Viewing the file
+c5() {
+    ADY="https://snips.sh/f/vYOIhLB4A2"
+    CO="curl $ADY"
+    echo -e "${GREEN} Executing the command: ${CO} ${NC}"
+    $CO
+}
+
 # Execution
 b1
-c4
+c5
