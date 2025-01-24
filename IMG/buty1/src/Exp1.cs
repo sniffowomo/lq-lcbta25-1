@@ -10,7 +10,7 @@ namespace buty1.src
         {
             var colors = new[] {
                 Color.Red,
-                Color.AliceBlue,
+                Color.Aqua,
                 Color.BlanchedAlmond,
                 Color.BlueViolet };
             foreach (var color in colors)
