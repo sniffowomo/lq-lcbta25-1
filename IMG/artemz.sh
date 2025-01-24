@@ -39,6 +39,16 @@ c3() {
     eval "$CO"
 }
 
+# Write to snips.sh
+c4() {
+    KEY="sniff"
+    FIL="g1.ansi"
+    CO="bat $FIL | ssh -i $KEY snips.sh"
+    echo -e "{GREEN}Pushing to snips.sh"
+    echo -e "Executing the command: ${CO} ${NC}"
+    $CO
+}
+
 # Execution
 b1
-c1
+c4
