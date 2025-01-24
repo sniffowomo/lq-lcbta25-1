@@ -1,39 +1,20 @@
 
-1. [U12](#u12)
-2. [Diraz](#diraz)
-3. [External Packages](#external-packages)
-   1. [`Pastel`](#pastel)
+1. [buty1](#buty1)
+   1. [Command Being Executed](#command-being-executed)
+2. [Packages](#packages)
 
 
-# U12
+# buty1
 
-1. This will be the work starting from Lesson 12
+1. This csharp is execuiting this implicitly in code 
 
-# Diraz 
+## Command Being Executed 
 
-- For organization you are making directories for specific types of code
-
-👍 | 💯
---- | --- 
-[`exc`](./exc/) | Excercises
-[`src`](./src/) | Main Directory for working files
-[`exp`](./exp/) | Random Exerpimentation
-
-
-# External Packages 
-
-1. Youc can find external packages from c# 
-
-https://www.nuget.org/
-- Officially Maintined by MS 
-
-## [`Pastel`](https://www.nuget.org/packages/Pastel)
-
-1. Pacakge is for adding colors to parts of text.
-2. Similar to rust [`yansi`](https://lib.rs/crates/yansi)
-
-3. Installation - From the official docs 
-
-```csharp
-dotnet add package Pastel --version 6.0.1
+```sh 
+curl https://snips.sh/f/vYOIhLB4A2
 ```
+- Writing this in chsarp form
+
+# Packages
+
+Using the pastel nuget package for addding the color

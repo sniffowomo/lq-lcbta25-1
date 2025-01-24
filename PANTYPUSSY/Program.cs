@@ -1,20 +1,16 @@
-﻿using u12.exc;
-using u12.src;
-using u12.exp;
+﻿// File for curling 
 
-namespace u12
+using buty1.src;
+using Pastel;
+using System.Drawing;
+
+namespace buty1
 {
-
-    class Program
+    class MainClass
     {
-        // Main Entry point for the application
-        static void Main()
+        static void Main(string[] args)
         {
-            Console.Clear();
-            Work3.ExecuteIsLong();
-
-
+            Experiment1.Exp1();
         }
     }
 }
-
