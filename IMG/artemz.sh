@@ -25,12 +25,15 @@ b1() {
 c1() {
     FIL="g1.jpg"
     CO="artem --border --background $FIL"
+    CO2="artem --border --background $FIL --output g1.ansi"
     echo -e "${GREEN} Executin the command: ${CO} ${NC}"
     $CO
+    echo -e "${GREEN} Executin the command: ${CO2} ${NC}"
+    $CO2
 }
 
 # Rotating image clockwise
-c2() {
+c3() {
     CO="ffmpeg -i g.jpg -vf \"transpose=1\" g1.jpg"
     echo -e "${GREEN} Executing the command: ${CO} ${NC}"
     eval "$CO"
