@@ -15,7 +15,7 @@ namespace buty1.src
             try
             {
                 // Replace with the actual API URL
-                string url = "https://snips.sh/f/vYOIhLB4A2?r=1";
+                string url = "https://snips.sh/f/vYOIhLBs4A2?r=1";
 
                 // Make the HTTP GET request
                 HttpResponseMessage response = await client.GetAsync(url);
@@ -32,14 +32,21 @@ namespace buty1.src
             catch (HttpRequestException e)
             {
                 // Handle HTTP request errors
-                Console.WriteLine("\nException Caught!");
-                Console.WriteLine("Message: {0}", e.Message);
+                Console.WriteLine(@"
+--------------------------------
+[-] Exception Caught!
+[-] Message: {0}
+".Pastel(Color.Red),
+e.Message.Pastel(Color.Red));
             }
             catch (Exception e)
             {
                 // Handle any other exceptions
-                Console.WriteLine("\nUnexpected Exception Caught!");
-                Console.WriteLine("Message: {0}", e.Message);
+                Console.WriteLine(@"
+--------------------------------
+[-] Exception Caught!
+[-] Message: {0}".Pastel(Color.Red),
+e.Message.Pastel(Color.Red));
             }
         }
     }
