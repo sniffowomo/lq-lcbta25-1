@@ -35,6 +35,28 @@ waiting_animation() {
     printf "    \b\b\b\b"
 }
 
+# Function to clean the project
+clean_project() {
+    echo -e "${PURPLE}[-] Cleaning the project... ${NC}"
+    dotnet clean >/dev/null 2>&1 &
+    local clean_pid=$!
+
+    # Display a waiting animation while the clean process is running
+    waiting_animation $clean_pid
+
+    # Wait for the clean process to finish
+    wait $clean_pid
+    local exit_status=$?
+
+    if [ $exit_status -eq 0 ]; then
+        echo -e "${GREEN}[+] Project cleaned successfully ${NC}"
+        return 0
+    else
+        echo -e "${RED}[!] Failed to clean the project ${NC}"
+        return 1
+    fi
+}
+
 # Function to build for a specific runtime
 build_for_runtime() {
     local runtime=$1
@@ -66,6 +88,13 @@ build_for_runtime() {
 
 # Main execution
 header "Building Single Executable File for Windows and Linux"
+
+# Clean the project before building
+if clean_project; then
+    echo -e "${GREEN}[+] Project cleaned successfully. Proceeding with builds... ${NC}"
+else
+    echo -e "${RED}[!] Clean step failed. Builds may not proceed correctly. ${NC}"
+fi
 
 # Build for Windows
 if build_for_runtime "win-x64" "Windows"; then
