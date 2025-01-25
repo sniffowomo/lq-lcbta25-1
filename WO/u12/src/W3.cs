@@ -49,6 +49,7 @@ namespace u12.src
             string input = Console.ReadLine()?.Trim() ?? string.Empty;
             int number = int.Parse(input);
             Console.WriteLine($"The number is {number.ToString().Pastel(Color.YellowGreen)}");
+            Console.WriteLine($"Variable Type = {number.GetType().ToString().Pastel(Color.Yellow)}");
         }
     }
 }
