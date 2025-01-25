@@ -40,5 +40,15 @@ namespace u12.src
             // Note this is advanced using ternary operator
             Console.WriteLine($"The string {input.Pastel(Color.YellowGreen)} is {(IsLong(input) ? "long" : "short")}");
         }
+
+        // 31- Parsing strings 
+        public static void ExecuteParse31()
+        {
+            Utils.Label2("31 - Parsing Strings");
+            Console.WriteLine("Enter a number: ");
+            string input = Console.ReadLine()?.Trim() ?? string.Empty;
+            int number = int.Parse(input);
+            Console.WriteLine($"The number is {number.ToString().Pastel(Color.YellowGreen)}");
+        }
     }
 }

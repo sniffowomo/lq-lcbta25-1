@@ -15,7 +15,7 @@ namespace buty1.src
             try
             {
                 // Replace with the actual API URL
-                string url = "https://snips.sh/f/vYOIhLBs4A2?r=1";
+                string url = "https://snips.sh/f/vYOIhLB4A2?r=1";
 
                 // Make the HTTP GET request
                 HttpResponseMessage response = await client.GetAsync(url);
