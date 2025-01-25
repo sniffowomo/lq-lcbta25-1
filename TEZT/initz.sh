@@ -20,10 +20,16 @@ b1() {
 }
 
 b2() {
-    echo -e "${GREEN}[?] New Solution of New ProjectInSolution ${NC}"
+    echo -e "${GREEN}[?] (1)New Solution of (2)New ProjectInSolution ${NC}"
     echo -e "${PURPLE}[*] Choice: ${NC}"
     read -r projekt
-
+    if [ "$projekt" == "1" ]; then
+        c1
+    elif [ "$projekt" == "2" ]; then
+        c2
+    else
+        echo -e "${RED}[!] Invalid choice. Please enter either '1-1NewSolution' or '2-NewProjectInSolution'.${NC}"
+    fi
 }
 
 c1() {
@@ -75,7 +81,7 @@ c2() {
     CO1="dotnet new classlib -n $project_name"
     CO2="eza -T $project_name"
 
-    echo -e "${GREEN}[+] $projekt Created - DrinkHerPiss${NC}"
+    echo -e "${GREEN}[+] $projekt Created & ${NC}"
 
     # Execute the first command and capture the output and exit status
     output1=$($CO1 2>&1)
@@ -105,3 +111,5 @@ c2() {
 }
 
 # Execution
+b1
+b2
